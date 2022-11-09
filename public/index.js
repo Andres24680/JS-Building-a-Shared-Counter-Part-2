@@ -8,6 +8,8 @@ async function main(){
     const result = await response.json();
     
     let countValue = result.value;
+    
+    
 
     function increment(){
         countValue++;
@@ -24,3 +26,14 @@ async function main(){
     countContainer.textContent = countValue;
 }
 main()
+// 192.168.1.226
+/*fetch('http://localhost:9001/counter', {
+    method: 
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+       
+
+    })
+})*/
